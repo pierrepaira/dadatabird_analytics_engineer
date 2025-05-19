@@ -1,0 +1,281 @@
+[0m20:06:00.706314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bf0290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c49a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6b810>]}
+
+
+============================== 20:06:00.708793 | 79af2f71-7d26-4f2b-8f0c-a2ef3bfa3f5f ==============================
+[0m20:06:00.708793 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:06:00.709070 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pierre/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/pierre/projets_dbt/airbnb/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m20:06:00.757368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79af2f71-7d26-4f2b-8f0c-a2ef3bfa3f5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6b750>]}
+[0m20:06:00.763048 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:06:00.763404 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:06:00.806618 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.1287023, "process_in_blocks": "0", "process_kernel_time": 0.093201, "process_mem_max_rss": "102531072", "process_out_blocks": "0", "process_user_time": 0.55529}
+[0m20:06:00.807069 [debug] [MainThread]: Command `cli deps` succeeded at 20:06:00.806969 after 0.13 seconds
+[0m20:06:00.807303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6b790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bf8ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106956b90>]}
+[0m20:06:00.807562 [debug] [MainThread]: Flushing usage events
+[0m20:06:02.084840 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:08.457655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102d36f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c77fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c77e60>]}
+
+
+============================== 20:12:08.460292 | 4f66d093-6689-461f-9f48-401315c0f961 ==============================
+[0m20:12:08.460292 [info ] [MainThread]: Running with dbt=1.9.4
+[0m20:12:08.460562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pierre/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/pierre/projets_dbt/airbnb/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:08.466981 [info ] [MainThread]: dbt version: 1.9.4
+[0m20:12:08.467155 [info ] [MainThread]: python version: 3.12.5
+[0m20:12:08.467293 [info ] [MainThread]: python path: /Users/pierre/projets_dbt/.venv/bin/python3.12
+[0m20:12:08.467478 [info ] [MainThread]: os info: macOS-13.5-arm64-arm-64bit
+[0m20:12:09.155261 [info ] [MainThread]: Using profiles dir at /Users/pierre/.dbt
+[0m20:12:09.155496 [info ] [MainThread]: Using profiles.yml file at /Users/pierre/.dbt/profiles.yml
+[0m20:12:09.155627 [info ] [MainThread]: Using dbt_project.yml file at /Users/pierre/projets_dbt/airbnb/dbt_project.yml
+[0m20:12:09.155740 [info ] [MainThread]: adapter type: bigquery
+[0m20:12:09.155849 [info ] [MainThread]: adapter version: 1.8.3
+[0m20:12:09.190421 [info ] [MainThread]: Configuration:
+[0m20:12:09.190746 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:12:09.190878 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:12:09.190994 [info ] [MainThread]: Required dependencies:
+[0m20:12:09.191163 [debug] [MainThread]: Executing "git --help"
+[0m20:12:09.207028 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:12:09.207712 [debug] [MainThread]: STDERR: "b''"
+[0m20:12:09.207908 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:12:09.208083 [info ] [MainThread]: Connection:
+[0m20:12:09.208295 [info ] [MainThread]:   method: service-account
+[0m20:12:09.208404 [info ] [MainThread]:   database: bubbly-granite-456918-p0
+[0m20:12:09.208544 [info ] [MainThread]:   execution_project: bubbly-granite-456918-p0
+[0m20:12:09.208642 [info ] [MainThread]:   schema: FIL_ROUGE
+[0m20:12:09.208738 [info ] [MainThread]:   location: US
+[0m20:12:09.208834 [info ] [MainThread]:   priority: interactive
+[0m20:12:09.208935 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:12:09.209027 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:12:09.209124 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:12:09.209238 [info ] [MainThread]:   job_retries: 1
+[0m20:12:09.209332 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:12:09.209433 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:12:09.209526 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:12:09.209622 [info ] [MainThread]:   client_id: None
+[0m20:12:09.209816 [info ] [MainThread]:   token_uri: None
+[0m20:12:09.209977 [info ] [MainThread]:   dataproc_region: None
+[0m20:12:09.210093 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:12:09.210258 [info ] [MainThread]:   gcs_bucket: None
+[0m20:12:09.210366 [info ] [MainThread]:   dataproc_batch: None
+[0m20:12:09.210657 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m20:12:09.321713 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:12:09.322049 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:12:09.394717 [debug] [MainThread]: On debug: select 1 as id
+[0m20:12:11.737491 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bubbly-granite-456918-p0&j=bq:US:7ba86e90-322d-4b3a-b23b-0ab3b1ebfef2&page=queryresults
+[0m20:12:12.568174 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:12:12.569443 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:12:12.573559 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.1436934, "process_in_blocks": "0", "process_kernel_time": 0.416228, "process_mem_max_rss": "196395008", "process_out_blocks": "0", "process_user_time": 2.351855}
+[0m20:12:12.574841 [debug] [MainThread]: Command `dbt debug` succeeded at 20:12:12.574515 after 4.15 seconds
+[0m20:12:12.576481 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:12:12.578114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104184260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc15400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fce4920>]}
+[0m20:12:12.580260 [debug] [MainThread]: Flushing usage events
+[0m20:12:13.833943 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:16.414511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108049d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085586b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085582f0>]}
+
+
+============================== 20:12:16.416824 | cd1fde33-2eff-407d-9a71-658e76970ef9 ==============================
+[0m20:12:16.416824 [info ] [MainThread]: Running with dbt=1.9.4
+[0m20:12:16.417092 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pierre/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pierre/projets_dbt/airbnb/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt build', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:16.932236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x136ec71a0>]}
+[0m20:12:16.954577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1364b1ee0>]}
+[0m20:12:16.955037 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m20:12:17.046882 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m20:12:17.047383 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:12:17.047555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x136cc8950>]}
+[0m20:12:17.515282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1372df560>]}
+[0m20:12:17.542388 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pierre/projets_dbt/airbnb/target/manifest.json
+[0m20:12:17.543739 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pierre/projets_dbt/airbnb/target/semantic_manifest.json
+[0m20:12:17.560909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x137714e00>]}
+[0m20:12:17.561151 [info ] [MainThread]: Found 2 models, 4 data tests, 488 macros
+[0m20:12:17.562000 [info ] [MainThread]: 
+[0m20:12:17.562145 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:12:17.562254 [info ] [MainThread]: 
+[0m20:12:17.562445 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:12:17.563942 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bubbly-granite-456918-p0'
+[0m20:12:17.564123 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:12:19.306633 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_bubbly-granite-456918-p0, now list_bubbly-granite-456918-p0_FIL_ROUGE)
+[0m20:12:19.307574 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:12:20.709267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1371f5b20>]}
+[0m20:12:20.717725 [debug] [Thread-1 (]: Began running node model.airbnb.my_first_dbt_model
+[0m20:12:20.718549 [info ] [Thread-1 (]: 1 of 6 START sql table model FIL_ROUGE.my_first_dbt_model ...................... [RUN]
+[0m20:12:20.719086 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_bubbly-granite-456918-p0_FIL_ROUGE, now model.airbnb.my_first_dbt_model)
+[0m20:12:20.719526 [debug] [Thread-1 (]: Began compiling node model.airbnb.my_first_dbt_model
+[0m20:12:20.729441 [debug] [Thread-1 (]: Writing injected SQL for node "model.airbnb.my_first_dbt_model"
+[0m20:12:20.730455 [debug] [Thread-1 (]: Began executing node model.airbnb.my_first_dbt_model
+[0m20:12:20.743855 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:22.524083 [debug] [Thread-1 (]: Writing runtime sql for node "model.airbnb.my_first_dbt_model"
+[0m20:12:22.524760 [debug] [Thread-1 (]: On model.airbnb.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `bubbly-granite-456918-p0`.`FIL_ROUGE`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:12:23.370714 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bubbly-granite-456918-p0&j=bq:US:5cfc1aa5-13ae-4d9d-9f70-a7e8f69c00ae&page=queryresults
+[0m20:12:25.863762 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cd1fde33-2eff-407d-9a71-658e76970ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13648c560>]}
+[0m20:12:25.864863 [info ] [Thread-1 (]: 1 of 6 OK created sql table model FIL_ROUGE.my_first_dbt_model ................. [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 5.14s]
+[0m20:12:25.865347 [debug] [Thread-1 (]: Finished running node model.airbnb.my_first_dbt_model
+[0m20:12:25.866517 [debug] [Thread-1 (]: Began running node test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:12:25.866737 [info ] [Thread-1 (]: 2 of 6 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m20:12:25.867081 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.airbnb.my_first_dbt_model, now test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m20:12:25.867402 [debug] [Thread-1 (]: Began compiling node test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:12:25.876526 [debug] [Thread-1 (]: Writing injected SQL for node "test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:12:25.877441 [debug] [Thread-1 (]: Began executing node test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:12:25.896664 [debug] [Thread-1 (]: Writing runtime sql for node "test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:12:25.897457 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:25.901115 [debug] [Thread-1 (]: On test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `bubbly-granite-456918-p0`.`FIL_ROUGE`.`my_first_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:12:27.690736 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bubbly-granite-456918-p0&j=bq:US:a38098ec-c1b0-4130-b811-c3449eeeafc7&page=queryresults
+[0m20:12:29.028591 [error] [Thread-1 (]: 2 of 6 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 3.16s]
+[0m20:12:29.030763 [debug] [Thread-1 (]: Finished running node test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:12:29.031595 [debug] [Thread-1 (]: Began running node test.airbnb.unique_my_first_dbt_model_id.16e066b321
+[0m20:12:29.032464 [debug] [Thread-4 (]: Marking all children of 'test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'fail'.  Reason: Got 1 result, configured to fail if != 0.
+[0m20:12:29.034133 [info ] [Thread-1 (]: 3 of 6 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m20:12:29.038644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.airbnb.not_null_my_first_dbt_model_id.5fb22c2710, now test.airbnb.unique_my_first_dbt_model_id.16e066b321)
+[0m20:12:29.039441 [debug] [Thread-1 (]: Began compiling node test.airbnb.unique_my_first_dbt_model_id.16e066b321
+[0m20:12:29.067362 [debug] [Thread-1 (]: Writing injected SQL for node "test.airbnb.unique_my_first_dbt_model_id.16e066b321"
+[0m20:12:29.068886 [debug] [Thread-1 (]: Began executing node test.airbnb.unique_my_first_dbt_model_id.16e066b321
+[0m20:12:29.072470 [debug] [Thread-1 (]: Writing runtime sql for node "test.airbnb.unique_my_first_dbt_model_id.16e066b321"
+[0m20:12:29.073250 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:29.074786 [debug] [Thread-1 (]: On test.airbnb.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "test.airbnb.unique_my_first_dbt_model_id.16e066b321"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `bubbly-granite-456918-p0`.`FIL_ROUGE`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:12:30.985356 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bubbly-granite-456918-p0&j=bq:US:cd4d8a3e-0965-4ef4-91f4-6358659a3ac3&page=queryresults
+[0m20:12:32.195124 [info ] [Thread-1 (]: 3 of 6 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 3.16s]
+[0m20:12:32.196380 [debug] [Thread-1 (]: Finished running node test.airbnb.unique_my_first_dbt_model_id.16e066b321
+[0m20:12:32.198178 [debug] [Thread-1 (]: Began running node model.airbnb.my_second_dbt_model
+[0m20:12:32.198961 [info ] [Thread-1 (]: 4 of 6 SKIP relation FIL_ROUGE.my_second_dbt_model ............................. [[33mSKIP[0m]
+[0m20:12:32.199431 [debug] [Thread-1 (]: Finished running node model.airbnb.my_second_dbt_model
+[0m20:12:32.199880 [debug] [Thread-4 (]: Marking all children of 'model.airbnb.my_second_dbt_model' to be skipped because of status 'skipped'. 
+[0m20:12:32.200825 [debug] [Thread-1 (]: Began running node test.airbnb.not_null_my_second_dbt_model_id.151b76d778
+[0m20:12:32.201370 [info ] [Thread-1 (]: 5 of 6 SKIP test not_null_my_second_dbt_model_id ............................... [[33mSKIP[0m]
+[0m20:12:32.201933 [debug] [Thread-1 (]: Finished running node test.airbnb.not_null_my_second_dbt_model_id.151b76d778
+[0m20:12:32.203450 [debug] [Thread-1 (]: Began running node test.airbnb.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:12:32.204138 [debug] [Thread-4 (]: Marking all children of 'test.airbnb.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'skipped'. 
+[0m20:12:32.204985 [info ] [Thread-1 (]: 6 of 6 SKIP test unique_my_second_dbt_model_id ................................. [[33mSKIP[0m]
+[0m20:12:32.205788 [debug] [Thread-1 (]: Finished running node test.airbnb.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:12:32.206225 [debug] [Thread-4 (]: Marking all children of 'test.airbnb.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'skipped'. 
+[0m20:12:32.207860 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:12:32.208265 [debug] [MainThread]: Connection 'test.airbnb.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m20:12:32.208714 [info ] [MainThread]: 
+[0m20:12:32.209111 [info ] [MainThread]: Finished running 1 table model, 4 data tests, 1 view model in 0 hours 0 minutes and 14.65 seconds (14.65s).
+[0m20:12:32.210711 [debug] [MainThread]: Command end result
+[0m20:12:32.242410 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pierre/projets_dbt/airbnb/target/manifest.json
+[0m20:12:32.245582 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pierre/projets_dbt/airbnb/target/semantic_manifest.json
+[0m20:12:32.250441 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pierre/projets_dbt/airbnb/target/run_results.json
+[0m20:12:32.250750 [info ] [MainThread]: 
+[0m20:12:32.250975 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:12:32.251113 [info ] [MainThread]: 
+[0m20:12:32.251287 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m20:12:32.251445 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m20:12:32.251544 [info ] [MainThread]: 
+[0m20:12:32.251693 [info ] [MainThread]:   compiled code at target/compiled/airbnb/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m20:12:32.251830 [info ] [MainThread]: 
+[0m20:12:32.252028 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=3 TOTAL=6
+[0m20:12:32.254752 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 15.868629, "process_in_blocks": "0", "process_kernel_time": 0.56176, "process_mem_max_rss": "208388096", "process_out_blocks": "0", "process_user_time": 3.155228}
+[0m20:12:32.255137 [debug] [MainThread]: Command `dbt build` failed at 20:12:32.255074 after 15.87 seconds
+[0m20:12:32.255509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084d9eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084db440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a10770>]}
+[0m20:12:32.255733 [debug] [MainThread]: Flushing usage events
+[0m20:12:33.383259 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:49:22.956554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052f3e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10536b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10536bcd0>]}
+
+
+============================== 20:49:22.959777 | 1bc0b1c4-ca90-4d6b-834d-b058cce0634d ==============================
+[0m20:49:22.959777 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:49:22.960146 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/pierre/.dbt', 'log_path': '/Users/pierre/projets_dbt/airbnb/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:49:23.004600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1bc0b1c4-ca90-4d6b-834d-b058cce0634d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053986d0>]}
+[0m20:49:23.009923 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:49:23.010334 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:49:23.011595 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.09875867, "process_in_blocks": "0", "process_kernel_time": 0.089505, "process_mem_max_rss": "101580800", "process_out_blocks": "0", "process_user_time": 0.561348}
+[0m20:49:23.011837 [debug] [MainThread]: Command `cli deps` succeeded at 20:49:23.011772 after 0.10 seconds
+[0m20:49:23.012018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105371d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052f8ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104847f10>]}
+[0m20:49:23.012171 [debug] [MainThread]: Flushing usage events
+[0m20:49:24.477539 [debug] [MainThread]: An error was encountered while trying to flush usage events

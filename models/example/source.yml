@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: AIRBNB
+    database: bubbly-granite-456918-p0   # ← très important pour BigQuery
+    schema: AIRBNB
+    tables:
+      - name: listing
